@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Condiments</defName>
+        <label>condiments</label>
+        <parent>Foods</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Resources/Salt</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Hides</defName>
+        <label>hides</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Resources/HideLarge</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Handwear</defName>
+        <label>handwear</label>
+        <parent>Apparel</parent>
+        <iconPath>Apparel/Handwear/GlovesPlate</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Footwear</defName>
+        <label>footwear</label>
+        <parent>Apparel</parent>
+        <iconPath>Apparel/Footwear/BootsPlate</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Shields</defName>
+        <label>shields</label>
+        <parent>Apparel</parent>
+        <iconPath>Apparel/Utility/IconHeater</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_NonAlcoholic</defName>
+        <label>non-alcoholic</label>
+        <parent>Foods</parent>
+        <iconPath>Drug/Cider/Cider_a</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Treatise</defName>
+        <label>treatise</label>
+        <parent>Items</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Special/Treatise/TreatiseMelee</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Loot</defName>
+        <label>loot</label>
+        <parent>Items</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>UI/LootIcon</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_AlchemyIngredients</defName>
+        <label>loot</label>
+        <parent>Items</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>UI/Alchemy_Icon</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>DankPyon_ApparelJewelry</defName>
+      <label>jewelry</label>
+      <parent>Apparel</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_BuildingsLoot</defName>
+        <label>polished loot</label>
+        <parent>Buildings</parent>
+        <iconPath>UI/LootIcon</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_TrebuchetAmmo</defName>
+        <label>trebuchet ammo</label>
+        <parent>Manufactured</parent>
+        <iconPath>Overlays/StoneBoulder_Icon</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_CorpsesMonsters</defName>
+        <label>monster corpses</label>
+        <parent>Corpses</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_WeaponsMeleeNamed</defName>
+        <label>named weapons</label>
+        <parent>Weapons</parent>
+    </ThingCategoryDef>
+    
+</Defs>
