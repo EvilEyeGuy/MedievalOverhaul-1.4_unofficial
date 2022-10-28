@@ -18,14 +18,13 @@
 		<minRefireDays>30</minRefireDays>
 		
 		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
-		<modExtensions>
-			<!-- needs this -->
+		<!--modExtensions>
 			<li Class="GenericWandersIn.IncidentProperties">
-				<kindDef>DankPyon_Daer</kindDef>	<!-- the kind to spawn -->
-				<max>1~2</max>	<!-- the maximum number that can spawn -->
-				<leaveMapAfterTime>true</leaveMapAfterTime>	<!-- whether they leave the map after a random amount of time -->
+				<kindDef>DankPyon_Daer</kindDef>
+				<max>1~2</max>
+				<leaveMapAfterTime>true</leaveMapAfterTime>
             </li>
-		</modExtensions>
+		</modExtensions-->
 		
 	</IncidentDef>
 
@@ -43,14 +42,14 @@
 		<minRefireDays>30</minRefireDays>
 		
 		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
-		<modExtensions>
-			<!-- needs this -->
+		<!--modExtensions>
+
 			<li Class="GenericWandersIn.IncidentProperties">
-				<kindDef>DankPyon_LindwurmForest</kindDef>	<!-- the kind to spawn -->
-				<max>1~2</max>	<!-- the maximum number that can spawn -->
-				<leaveMapAfterTime>true</leaveMapAfterTime>	<!-- whether they leave the map after a random amount of time -->
+				<kindDef>DankPyon_LindwurmForest</kindDef>
+				<max>1~2</max>
+				<leaveMapAfterTime>true</leaveMapAfterTime>
             </li>
-		</modExtensions>
+		</modExtensions-->
 		
 	</IncidentDef>
 </Defs>

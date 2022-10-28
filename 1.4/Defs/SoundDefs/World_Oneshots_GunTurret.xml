@@ -11,8 +11,14 @@
             <clipFolderPath>DankPyon_Explosion_Boulder</clipFolderPath>
           </li>
         </grains>      
-        <volumeRange>80~80</volumeRange>      
-        <pitchRange>0.8516304~1.254348</pitchRange>
+        <volumeRange>
+			<min>80</min>
+			<max>80</max>
+		</volumeRange>      
+        <pitchRange>
+			<min>0.85</min>
+			<max>1.25</max>
+		</pitchRange>
       </li>
     </subSounds>
   </SoundDef>

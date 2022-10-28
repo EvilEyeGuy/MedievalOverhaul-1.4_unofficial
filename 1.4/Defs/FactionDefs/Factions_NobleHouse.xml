@@ -117,7 +117,7 @@
     </pawnGroupMakers>
     <settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
 
-    <modExtensions>
+    <!--modExtensions>
       <li Class="StandaloneSettlementPreference.SettlementPreference">
         <chance>0.8</chance>
         <onlyRoad>true</onlyRoad>
@@ -129,7 +129,7 @@
         <swampinessRangeMax>0.8</swampinessRangeMax>
         <IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
       </li>
-    </modExtensions>
+    </modExtensions-->
   </FactionDef>
 
   <ThingSetMakerDef>
