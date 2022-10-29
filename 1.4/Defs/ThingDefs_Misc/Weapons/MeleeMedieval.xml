@@ -864,7 +864,7 @@
     </weaponTags>
 
     <tools>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -874,7 +874,7 @@
         <cooldownTime>2</cooldownTime>
         <!--meleeReachRange>3</meleeReachRange-->
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -946,7 +946,7 @@
     </weaponTags>
 
     <tools>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -956,7 +956,7 @@
         <cooldownTime>2</cooldownTime>
         <!--meleeReachRange>3</meleeReachRange-->
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>blade</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1036,7 +1036,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>blade</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1116,7 +1116,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>Point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1271,7 +1271,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>edge</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>

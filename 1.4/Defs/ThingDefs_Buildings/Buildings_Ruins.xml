@@ -547,7 +547,7 @@
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedBonePile1x2c</defName>
-		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<label>large remains</label>
 		<tickerType>Normal</tickerType>
 		<description>Old bones that are crudely stacked in a spot.</description>
@@ -582,7 +582,7 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<surfaceType>Item</surfaceType>
 
-		<!--modExtensions>
+		<modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -624,7 +624,7 @@
 					<li>DankPyon_Bone</li>
 				</randomItems>
 			</li>
-		</modExtensions-->
+		</modExtensions>
 	</ThingDef>
 
 

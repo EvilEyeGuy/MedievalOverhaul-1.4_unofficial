@@ -541,7 +541,7 @@
       <li>DankPyon_CandleMaking</li>
     </researchPrerequisites>
     <modExtensions>
-      <!--li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li-->
+      <li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
     </modExtensions>
   </ThingDef>
 
@@ -657,7 +657,7 @@
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
 	<modExtensions>
-		<!--li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li-->
+		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
 	</modExtensions>
   </ThingDef>
 	
@@ -711,7 +711,7 @@
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 	<modExtensions>
-		<!--li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li-->
+		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
 	</modExtensions>
 	</ThingDef>
 
@@ -1489,10 +1489,10 @@
     
     <comps>
 
-        <!--li Class="DankPyon_MedievalOverhaul.CompProperties_FireOverlaySouth">
+        <li Class="DankPyon_MedievalOverhaul.CompProperties_FireOverlaySouth">
             <fireSize>0.7</fireSize>
            <offset>(0,0,-0.2)</offset>
-         </li-->
+         </li>
 
         <li Class="CompProperties_Glower">
           <glowRadius>5</glowRadius>
@@ -1638,10 +1638,10 @@
             </li>
           </offsets>
         </li>
-        <!--li Class="DankPyon_MedievalOverhaul.CompProperties_FireOverlaySouth">
+        <li Class="DankPyon_MedievalOverhaul.CompProperties_FireOverlaySouth">
           <fireSize>1</fireSize>
           <offset>(0,0,0.1)</offset>
-        </li-->
+        </li>
       </comps>
 
       <researchPrerequisites>

@@ -103,7 +103,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.2,1.2)</drawSize>
     </graphicData>
-    <!--thingClass>DankPyon.Bullet_ExplosiveProperty</thingClass-->
+    <thingClass>DankPyon.Bullet_ExplosiveProperty</thingClass>
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>RangedStab</damageDef>
@@ -113,7 +113,7 @@
       <speed>60</speed>
     </projectile>
     <modExtensions>
-      <!--li Class="DankPyon.AdditionalProjectileProperties">
+      <li Class="DankPyon.AdditionalProjectileProperties">
         <projectile2>
           <damageDef>DankPyon_Damage_BallistaBolt</damageDef>
           <damageAmountBase>20</damageAmountBase>
@@ -121,7 +121,7 @@
           <soundExplode>BulletImpact_Wood</soundExplode>
           <armorPenetrationBase>0.20</armorPenetrationBase>
         </projectile2>
-      </li-->
+      </li>
     </modExtensions>
   </ThingDef>
 

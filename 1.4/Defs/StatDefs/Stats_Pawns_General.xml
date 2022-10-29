@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--StatDef>
+  <StatDef>
     <defName>Dank_ToxicBuildupHediffFallRateMult</defName>
     <label>hediff fall rate</label>
     <description>Speed of movement in cells per second.</description>
@@ -15,6 +15,6 @@
 			<hediffDef>ToxicBuildup</hediffDef>
 		</li>
 	</modExtensions>
-  </StatDef-->
+  </StatDef>
 
 </Defs>

@@ -334,11 +334,11 @@
       <li>DankPyon_Hides</li>
     </categories>
   </ingredientFilter>
-  <!--modExtensions>
+  <modExtensions>
 	<li Class="DankPyon.ProcessorExtension">
 		<outputOnlyButcherProduct>true</outputOnlyButcherProduct>
 	</li>
-  </modExtensions-->
+  </modExtensions>
 </ProcessorFramework.ProcessDef>
 
 <ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">

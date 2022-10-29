@@ -34,7 +34,7 @@
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
 		<modExtensions>
-			<!--li Class="DankPyon.PlantExtension">
+			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
 				<firstAreaOffset>(-1, 0)</firstAreaOffset>
 				<firstArea>(3, 7)</firstArea>
@@ -45,7 +45,7 @@
 					<li>ChunkGranite</li>
 					<li>ChunkSandstone</li>
 				</ignoredThings>
-			</li-->
+			</li>
 			<li Class="VanillaPlantsExpanded.DualCropExtension">
 				<secondaryOutput>DankPyon_Amber</secondaryOutput>
 				<outPutAmount>20</outPutAmount>
@@ -78,7 +78,7 @@
 			<visualSizeRange>3~5</visualSizeRange>
 		</plant>
 		<modExtensions>
-			<!--li Class="DankPyon.PlantExtension">
+			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
 				<firstArea>(1, 2)</firstArea>
 				<secondArea>(5, 3)</secondArea>
@@ -88,7 +88,7 @@
 					<li>ChunkGranite</li>
 					<li>ChunkSandstone</li>
 				</ignoredThings>
-			</li-->
+			</li>
 			<li Class="VanillaPlantsExpanded.DualCropExtension">
 				<secondaryOutput>DankPyon_Amber</secondaryOutput>
 				<outPutAmount>5</outPutAmount>

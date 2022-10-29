@@ -505,9 +505,9 @@
       </li>
 
       <li Class="CompProperties_Breakdownable"/>
-	  <!--li>
+	  <li>
 		<compClass>DankPyon_MedievalOverhaul.Comp_WindMill</compClass>
-	  </li-->
+	  </li>
     </comps>
 
     <rotatable>true</rotatable>

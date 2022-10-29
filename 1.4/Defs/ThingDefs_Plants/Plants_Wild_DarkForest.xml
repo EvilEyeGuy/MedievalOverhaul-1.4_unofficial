@@ -50,7 +50,7 @@
 		</comps-->
 
 		<modExtensions>
-			<!--li Class="DankPyon.PlantExtension">
+			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
 				<firstAreaOffset>(-1, 0)</firstAreaOffset>
 				<firstArea>(3, 7)</firstArea>
@@ -61,7 +61,7 @@
 					<li>ChunkGranite</li>
 					<li>ChunkSandstone</li>
 				</ignoredThings>
-			</li-->
+			</li>
 			<li Class="VanillaPlantsExpanded.DualCropExtension">
 				<secondaryOutput>DankPyon_Amber</secondaryOutput>
 				<outPutAmount>10</outPutAmount>
@@ -118,7 +118,7 @@
 		</comps-->
 
 		<modExtensions>
-			<!--li Class="DankPyon.PlantExtension">
+			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
 				<firstAreaOffset>(-3, 0)</firstAreaOffset>
 				<firstArea>(7, 6)</firstArea>
@@ -129,7 +129,7 @@
 					<li>ChunkGranite</li>
 					<li>ChunkSandstone</li>
 				</ignoredThings>
-			</li-->
+			</li>
 			<li Class="VanillaPlantsExpanded.DualCropExtension">
 				<secondaryOutput>DankPyon_Amber</secondaryOutput>
 				<outPutAmount>10</outPutAmount>
@@ -163,7 +163,7 @@
 		</plant>
 
 		<modExtensions>
-			<!--li Class="DankPyon.PlantExtension">
+			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
 				<firstAreaOffset>(-1, 0)</firstAreaOffset>
 				<firstArea>(3, 3)</firstArea>
@@ -175,7 +175,7 @@
 					<li>ChunkSandstone</li>
 					<li>ChunkLimestone</li>
 				</ignoredThings>
-			</li-->
+			</li>
 			<li Class="VanillaPlantsExpanded.DualCropExtension">
 				<secondaryOutput>DankPyon_Amber</secondaryOutput>
 				<outPutAmount>2</outPutAmount>
@@ -229,7 +229,7 @@
 	</comps-->
 
 	<modExtensions>
-		<!--li Class="DankPyon.PlantExtension">
+		<li Class="DankPyon.PlantExtension">
 			<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
 			<firstAreaOffset>(-1, 0)</firstAreaOffset>
 			<firstArea>(3, 3)</firstArea>
@@ -241,7 +241,7 @@
 				<li>ChunkSandstone</li>
 				<li>ChunkLimestone</li>
 			</ignoredThings>
-		</li-->
+		</li>
 		<li Class="VanillaPlantsExpanded.DualCropExtension">
 			<secondaryOutput>DankPyon_Amber</secondaryOutput>
 			<outPutAmount>2</outPutAmount>

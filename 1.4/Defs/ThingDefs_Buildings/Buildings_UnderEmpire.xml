@@ -61,7 +61,7 @@
 <ThingDef ParentName="DankPyon_AncientReliquaryBase">
     <defName>DankPyon_AncientReliquary</defName>
     <label>ancient reliquary</label>
-    <!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
+    <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
     <tickerType>Normal</tickerType>
     <drawerType>MapMeshAndRealTime</drawerType>
 
@@ -96,7 +96,7 @@
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
 
-    <!--modExtensions>
+    <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 				    <li>Rat</li>
@@ -124,7 +124,7 @@
                     <li>DankPyon_MeleeWeapon_NamedHalberd1c</li>
 				</randomItems>
 			</li>
-		</modExtensions-->
+		</modExtensions>
     
 </ThingDef>
   

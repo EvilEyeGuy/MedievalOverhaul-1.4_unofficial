@@ -17,7 +17,7 @@
 		<baseChance>0.7</baseChance>
 		<minRefireDays>30</minRefireDays>
 		
-		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
+		<!--workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass-->	<!-- don't change this -->
 		<!--modExtensions>
 			<li Class="GenericWandersIn.IncidentProperties">
 				<kindDef>DankPyon_Daer</kindDef>
@@ -41,7 +41,7 @@
 		<baseChance>0.7</baseChance>
 		<minRefireDays>30</minRefireDays>
 		
-		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
+		<!--workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass-->	<!-- don't change this -->
 		<!--modExtensions>
 
 			<li Class="GenericWandersIn.IncidentProperties">
