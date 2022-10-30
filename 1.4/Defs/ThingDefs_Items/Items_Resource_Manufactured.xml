@@ -206,7 +206,7 @@
         <preExplosionSpawnChance>0.4</preExplosionSpawnChance>
         <preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
         <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-        <soundExplode>DankPyon_Explosion_Boulder</soundExplode>
+        <!--soundExplode>DankPyon_Explosion_Boulder</soundExplode-->
         <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
         <soundAmbient>MortarRound_Ambient</soundAmbient>    
     </projectile>
@@ -261,7 +261,7 @@
         <preExplosionSpawnChance>0.4</preExplosionSpawnChance>
         <preExplosionSpawnThingDef>DankPyon_Filth_Tar</preExplosionSpawnThingDef>
         <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-        <soundExplode>DankPyon_Explosion_Boulder</soundExplode>
+        <!--soundExplode>DankPyon_Explosion_Boulder</soundExplode-->
         <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
         <soundAmbient>MortarRound_Ambient</soundAmbient>    
         <ai_IsIncendiary>true</ai_IsIncendiary>
