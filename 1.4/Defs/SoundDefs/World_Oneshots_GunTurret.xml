@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Defs>
 
-  <SoundDef>
+  <!--SoundDef>
     <defName>DankPyon_Explosion_Boulder</defName>  
     <context>MapOnly</context> 
     <maxSimultaneous>1</maxSimultaneous>  
@@ -15,6 +15,6 @@
         <pitchRange>0.8516304~1.254348</pitchRange>
       </li>
     </subSounds>
-  </SoundDef>
+  </SoundDef-->
 
 </Defs>
