@@ -6,22 +6,60 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RecipeDef[defName="Excavate_Gold"]/products</xpath>
-					<value>
-						<products>
-							<DankPyon_GoldOre>10</DankPyon_GoldOre>
-						</products>
-					</value>
-				</li>
-				<li Class="PatchOperationRemove">
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="Excavate_Gold"]</xpath>
+						<value>
+							<products>
+								<DankPyon_GoldOre>10</DankPyon_GoldOre>
+							</products>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="Excavate_Gold"]/products</xpath>
+						<value>
+							<products>
+								<DankPyon_GoldOre>10</DankPyon_GoldOre>
+							</products>
+						</value>
+					</match>
+				</li>			
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RecipeDef[defName="Excavate_Steel"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="Excavate_Steel"]</xpath>
+					</match>
+				</li>			
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_Steel</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_Steel</xpath>
+					</match>
 				</li>
-				<li Class="PatchOperationRemove">
+				<!--li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[3]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[3]</xpath>
+					</match>
+				</li>		
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[2]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[2]</xpath>
+					</match>
+				</li-->			
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[1]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[1]</xpath>
+					</match>
+				</li>			
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_ComponentIndustrial</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_ComponentIndustrial</xpath>
+					</match>
 				</li>
 			</operations>
 		</match>

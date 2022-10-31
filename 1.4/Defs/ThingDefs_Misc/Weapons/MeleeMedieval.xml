@@ -2553,8 +2553,8 @@
     <drawSize>(1.25,1.25)</drawSize>
 	<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
 	<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
-	<drawOffsetSouth>(-0.30,0.20,0.40)</drawOffsetSouth>
-	<drawOffsetWest>(0.30,0.20,0.40)</drawOffsetWest>
+	<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
+	<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
   </graphicData>
   <techLevel>Medieval</techLevel>
   <equippedAngleOffset>-60</equippedAngleOffset> 
@@ -2627,8 +2627,8 @@
     <drawSize>(1.25,1.25)</drawSize>
 	<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
 	<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
-	<drawOffsetSouth>(-0.30,0.20,0.40)</drawOffsetSouth>
-	<drawOffsetWest>(0.30,0.20,0.40)</drawOffsetWest>
+	<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
+	<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
   </graphicData>
   <techLevel>Medieval</techLevel>
   <equippedAngleOffset>-60</equippedAngleOffset> 
@@ -2766,8 +2766,8 @@
         <drawSize>(1.25,1.25)</drawSize>
 		<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
 		<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
-		<drawOffsetSouth>(-0.30,0.20,0.40)</drawOffsetSouth>
-		<drawOffsetWest>(0.30,0.20,0.40)</drawOffsetWest>
+		<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
+		<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
     </graphicData>
     <equippedAngleOffset>-60</equippedAngleOffset> 
     <!--comps>
@@ -3013,10 +3013,10 @@
 		<texPath>WeaponMelee/Polearms/NamedHalberd/NamedHalberd1</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.5,1.5)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
+		<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
+		<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
+		<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
+		<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
     </graphicData>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
