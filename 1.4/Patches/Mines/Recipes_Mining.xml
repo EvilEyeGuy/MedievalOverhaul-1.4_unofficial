@@ -48,7 +48,13 @@
 					<match Class="PatchOperationRemove">
 						<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[2]</xpath>
 					</match>
-				</li-->			
+				</li-->	
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[12]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[12]</xpath>
+					</match>
+				</li>
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[1]</xpath>
 					<match Class="PatchOperationRemove">

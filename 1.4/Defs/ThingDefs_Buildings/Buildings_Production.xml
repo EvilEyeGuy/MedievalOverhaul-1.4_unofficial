@@ -293,7 +293,9 @@
       <li>CookMealLavishBulk_Meat</li>
       <li>CookMealSurvivalBulk</li>
       <li>Make_Pemmican</li>
-      <li>Make_PemmicanBulk</li>
+      <li>Make_PemmicanBulk</li>      
+	  <li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
     </recipes>
     
     <comps>
