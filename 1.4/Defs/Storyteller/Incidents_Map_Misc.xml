@@ -17,14 +17,14 @@
 		<baseChance>0.7</baseChance>
 		<minRefireDays>30</minRefireDays>
 		
-		<!--workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass-->	<!-- don't change this -->
-		<!--modExtensions>
+		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
+		<modExtensions>
 			<li Class="GenericWandersIn.IncidentProperties">
 				<kindDef>DankPyon_Daer</kindDef>
 				<max>1~2</max>
 				<leaveMapAfterTime>true</leaveMapAfterTime>
             </li>
-		</modExtensions-->
+		</modExtensions>
 		
 	</IncidentDef>
 
@@ -41,15 +41,15 @@
 		<baseChance>0.7</baseChance>
 		<minRefireDays>30</minRefireDays>
 		
-		<!--workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass-->	<!-- don't change this -->
-		<!--modExtensions>
+		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
+		<modExtensions>
 
 			<li Class="GenericWandersIn.IncidentProperties">
 				<kindDef>DankPyon_LindwurmForest</kindDef>
 				<max>1~2</max>
 				<leaveMapAfterTime>true</leaveMapAfterTime>
             </li>
-		</modExtensions-->
+		</modExtensions>
 		
 	</IncidentDef>
 </Defs>
