@@ -2688,6 +2688,12 @@
       <Crafting>6</Crafting>
     </skillRequirements>
   </recipeMaker>
+  
+    <modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<usableWithShields>false</usableWithShields>
+		</li>
+    </modExtensions>
 </ThingDef>
 
 <!--==================== Named Weapons ====================-->
