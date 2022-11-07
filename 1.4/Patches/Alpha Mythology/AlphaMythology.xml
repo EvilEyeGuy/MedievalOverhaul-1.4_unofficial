@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Mythology</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <!-- Ahuizotl -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_MM_Ahuizotl</defName>
+              <label>large ahuizotl hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurLarge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>122</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>40</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Ahuizotl"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Ahuizotl</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Basilisk -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_MM_Basilisk</defName>
+              <label>tiny basilisk hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>37</MarketValue>
+              </statBases>
+              <stackLimit>12</stackLimit>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>12</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Basilisk"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Basilisk</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Catoblepas -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_Catoblepas</defName>
+              <label>huge catoblepas hide</label>
+              <graphicData>
+                <texPath>Resources/HideHuge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>245</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>80</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Catoblepas"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Catoblepas</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Cerberus -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_MM_Cerberus</defName>
+              <label>large cerberus hide</label>
+              <graphicData>
+                <texPath>Resources/HideLarge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>98</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>32</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Cerberus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>FrontRightPaw</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Cerberus</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Ceryneian Hind -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_CeryneianHind</defName>
+              <label>huge ceryneian hind hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>367</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>120</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_CeryneianHind"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_CeryneianHind</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Chimera -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_Chimera</defName>
+              <label>huge chimera hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>245</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>80</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Chimera"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Chimera</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Erymanthian Boar -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_ErymanthianBoar</defName>
+              <label>huge erymanthian boar hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>490</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>160</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_ErymanthianBoar"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_ErymanthianBoar</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Fenghuang -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_MM_Fenghuang</defName>
+              <label>large fenghuang hide</label>
+              <graphicData>
+                <texPath>Resources/HideLarge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>153</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>50</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Fenghuang"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Fenghuang</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Griffin -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_Griffin</defName>
+              <label>huge griffin hide</label>
+              <graphicData>
+                <texPath>Resources/HideHuge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>367</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>120</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Griffin"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Griffin</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Ieltxu -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseMedium">
+              <defName>DankPyon_Hide_MM_Ieltxu</defName>
+              <label>medium ieltxu hide</label>
+              <graphicData>
+                <texPath>Resources/HideMedium</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>73</MarketValue>
+              </statBases>
+              <stackLimit>4</stackLimit>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>24</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Ieltxu"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Ieltxu</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Kappa -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_MM_Kappa</defName>
+              <label>large kappa hide</label>
+              <graphicData>
+                <texPath>Resources/HideLarge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>98</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>32</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Kappa"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Kappa</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Kitsune -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseMedium">
+              <defName>DankPyon_Hide_MM_Kitsune</defName>
+              <label>medium kitsune hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurMedium</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>73</MarketValue>
+              </statBases>
+              <stackLimit>4</stackLimit>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>24</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Kitsune"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Kitsune</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Lernaean Hydra -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_LernaeanHydra</defName>
+              <label>huge lernaean hydra hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(66,62,49)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>1008</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_HeavyMagicalLeather>320</MM_HeavyMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(66,62,49)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_LernaeanHydra"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>FrontLeftLeg</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_LernaeanHydra</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Lesser Wyvern -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_LesserWyvern</defName>
+              <label>huge lesser wyvern hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(66,62,49)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>378</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_HeavyMagicalLeather>120</MM_HeavyMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(66,62,49)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_LesserWyvern"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_LesserWyvern</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Manticore -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_Manticore</defName>
+              <label>huge manticore hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(66,62,49)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>315</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_HeavyMagicalLeather>100</MM_HeavyMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(66,62,49)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Manticore"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Manticore</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Pegasus -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_Pegasus</defName>
+              <label>huge pegasus hide</label>
+              <graphicData>
+                <texPath>Resources/HideHuge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>245</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>80</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Pegasus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Pegasus</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Phoenix -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_MM_Phoenix</defName>
+              <label>large phoenix hide</label>
+              <graphicData>
+                <texPath>Resources/HideLarge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>122</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>40</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Phoenix"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Phoenix</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Qilin -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_MM_Qilin</defName>
+              <label>large qilin hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleLarge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>110</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>36</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Qilin"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Qilin</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Salamander -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseSmall">
+              <defName>DankPyon_Hide_MM_Salamander</defName>
+              <label>small salamander hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleSmall</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>110</MarketValue>
+              </statBases>
+              <stackLimit>6</stackLimit>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>20</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Salamander"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Salamander</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Tlilcoatl -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseSmall">
+              <defName>DankPyon_Hide_MM_Tlilcoatl</defName>
+              <label>small tlicoatl hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleSmall</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>110</MarketValue>
+              </statBases>
+              <stackLimit>6</stackLimit>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>20</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Tlilcoatl"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Tlilcoatl</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Unicorn -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_Unicorn</defName>
+              <label>huge unicorn hide</label>
+              <graphicData>
+                <texPath>Resources/HideHuge</texPath>
+                <color>(203,167,107)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>220</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_LightMagicalLeather>72</MM_LightMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(203,167,107)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Unicorn"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Unicorn</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Wild Minotaur -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_WildMinotaur</defName>
+              <label>huge minotaur hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(66,62,49)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>378</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_HeavyMagicalLeather>120</MM_HeavyMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(66,62,49)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_WildMinotaur"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_WildMinotaur</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <!-- Xiezhi -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MM_Xiezhi</defName>
+              <label>huge xiezhi hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(66,62,49)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>378</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MM_HeavyMagicalLeather>120</MM_HeavyMagicalLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(66,62,49)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="MM_Xiezhi"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_MM_Xiezhi</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

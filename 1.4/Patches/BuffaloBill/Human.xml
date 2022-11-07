@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Humanskin</defName>
+              <label>fresh human hide</label>
+              <graphicData>
+                <texPath>Resources/HumanHide</texPath>
+              </graphicData>
+              <statBases>
+                <MarketValue>283.5</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Human>75</Leather_Human>
+              </butcherProducts>
+            </ThingDef>
+          </value>
+        </li>
+        
+      </operations>
+  </match>
+</Operation>
+</Patch>

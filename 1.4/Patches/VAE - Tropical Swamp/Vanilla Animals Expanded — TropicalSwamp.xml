@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Animals Expanded — Tropical Swamp</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_AlligatorAEXP</defName>
+              <label>huge alligator hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(178,170,158)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>166.5</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Lizard>74</Leather_Lizard>
+              </butcherProducts>
+              <stuffProps>
+                <color>(178,170,158)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="AEXP_Alligator"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>Teeth</bodyPartGroup>
+            <thing>DankPyon_Hide_AlligatorAEXP</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseHuge">
+            <defName>DankPyon_Hide_AnacondaAEXP</defName>
+            <label>huge anaconda hide</label>
+            <graphicData>
+              <texPath>Resources/LindwurmScales/LindwurmScales_c</texPath>
+              <color>(250,235,215)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>270</MarketValue>
+            </statBases>
+            <butcherProducts Inherit="False">
+              <Leather_Lizard>120</Leather_Lizard>
+            </butcherProducts>
+            <stuffProps>
+              <color>(250,235,215)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/PawnKindDef [defName="AEXP_Anaconda"]/lifeStages/li[3]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_AnacondaAEXP</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseHuge">
+          <defName>DankPyon_Hide_IndianElephantAEXP</defName>
+          <label>huge indian elephant hide</label>
+          <graphicData>
+            <texPath>Resources/HideHuge</texPath>
+            <color>(112,82,65)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>306</MarketValue>
+          </statBases>
+          <butcherProducts Inherit="False">
+            <Leather_Elephant>100</Leather_Elephant>
+          </butcherProducts>
+          <stuffProps>
+            <color>(112,82,65)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef [defName="AEXP_IndianElephant"]/lifeStages/li[3]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+        <thing>DankPyon_Hide_IndianElephantAEXP</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+      </operations>
+  </match>
+</Operation>
+</Patch>

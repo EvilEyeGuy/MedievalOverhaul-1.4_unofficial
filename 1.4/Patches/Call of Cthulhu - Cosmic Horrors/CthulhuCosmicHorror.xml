@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Call of Cthulhu - Cosmic Horrors</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_StarVampire</defName>
+              <label>Huge star vampire hide</label>
+              <graphicData>
+                <texPath>Resources/HideHuge</texPath>
+                <color>(176,39,39)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>378</MarketValue>
+              </statBases>
+              <stackLimit>1</stackLimit>
+              <butcherProducts Inherit="False">
+                <CH_Leather_StarVampire>84</CH_Leather_StarVampire>
+              </butcherProducts>
+              <stuffProps>
+                <color>(176,39,39)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ROM_StarVampire"]/lifeStages//li[1]</xpath>
+  
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>Teeth</bodyPartGroup>
+              <thing>DankPyon_Hide_StarVampire</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ROM_StarVampire"]/lifeStages//li[2]</xpath>
+  
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>Teeth</bodyPartGroup>
+              <thing>DankPyon_Hide_StarVampire</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ROM_StarVampire"]/lifeStages//li[3]</xpath>
+  
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>Teeth</bodyPartGroup>
+              <thing>DankPyon_Hide_StarVampire</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/PawnKindDef[defName="ROM_StarVampire"]/lifeStages//li[4]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>Teeth</bodyPartGroup>
+            <thing>DankPyon_Hide_StarVampire</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseLarge">
+            <defName>DankPyon_Hide_StarVampireAbberation</defName>
+            <label>Large star vampire abberation hide</label>
+            <graphicData>
+              <texPath>Resources/HideLarge</texPath>
+              <color>(176,39,39)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>252</MarketValue>
+            </statBases>
+            <stackLimit>2</stackLimit>
+            <butcherProducts Inherit="False">
+              <CH_Leather_StarVampire>56</CH_Leather_StarVampire>
+            </butcherProducts>
+            <stuffProps>
+              <color>(176,39,39)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAbberation"]/lifeStages//li[1]</xpath>
+  
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>Teeth</bodyPartGroup>
+            <thing>DankPyon_Hide_StarVampireAbberation</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAbberation"]/lifeStages//li[2]</xpath>
+  
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>Teeth</bodyPartGroup>
+            <thing>DankPyon_Hide_StarVampireAbberation</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAbberation"]/lifeStages//li[3]</xpath>
+  
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>Teeth</bodyPartGroup>
+            <thing>DankPyon_Hide_StarVampireAbberation</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAbberation"]/lifeStages//li[4]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>DankPyon_Hide_StarVampireAbberation</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseLarge">
+          <defName>DankPyon_Hide_StarVampireAlbino</defName>
+          <label>Large star vampire albino hide</label>
+          <graphicData>
+            <texPath>Resources/HideLarge</texPath>
+            <color>(178,170,158)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>193.5</MarketValue>
+          </statBases>
+          <stackLimit>2</stackLimit>
+          <butcherProducts Inherit="False">
+            <CH_Leather_StarVampire>43</CH_Leather_StarVampire>
+          </butcherProducts>
+          <stuffProps>
+            <color>(178,170,158)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAlbino"]/lifeStages//li[1]</xpath>
+  
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>DankPyon_Hide_StarVampireAlbino</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAlbino"]/lifeStages//li[2]</xpath>
+  
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>DankPyon_Hide_StarVampireAlbino</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAlbino"]/lifeStages//li[3]</xpath>
+  
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>DankPyon_Hide_StarVampireAlbino</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireAlbino"]/lifeStages//li[4]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>Teeth</bodyPartGroup>
+        <thing>DankPyon_Hide_StarVampireAlbino</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <ThingDef ParentName="DankPyon_HideBaseHuge">
+        <defName>DankPyon_Hide_StarVampireNight</defName>
+        <label>Huge star vampire night hide</label>
+        <graphicData>
+          <texPath>Resources/HideHuge</texPath>
+          <color>(60,60,60)</color>
+        </graphicData>
+        <statBases>
+          <MarketValue>306</MarketValue>
+        </statBases>
+        <stackLimit>1</stackLimit>
+        <butcherProducts Inherit="False">
+          <CH_Leather_StarVampire>68</CH_Leather_StarVampire>
+        </butcherProducts>
+        <stuffProps>
+          <color>(60,60,60)</color>
+        </stuffProps>
+      </ThingDef>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireNight"]/lifeStages//li[1]</xpath>
+  
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>Teeth</bodyPartGroup>
+        <thing>DankPyon_Hide_StarVampireNight</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireNight"]/lifeStages//li[2]</xpath>
+  
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>Teeth</bodyPartGroup>
+        <thing>DankPyon_Hide_StarVampireNight</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireNight"]/lifeStages//li[3]</xpath>
+
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_StarVampireNight</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_StarVampireNight"]/lifeStages//li[4]</xpath>
+
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_StarVampireNight</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseHuge">
+      <defName>DankPyon_Hide_Chthonian</defName>
+      <label>huge chthonian hide</label>
+      <graphicData>
+        <texPath>Resources/HideHuge</texPath>
+        <color>(78,60,61)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>489.9</MarketValue>
+      </statBases>
+      <stackLimit>1</stackLimit>
+      <butcherProducts Inherit="False">
+        <CH_Leather_Chthonian>68</CH_Leather_Chthonian>
+      </butcherProducts>
+      <stuffProps>
+        <color>(78,60,61)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_Chthonian"]/lifeStages//li[1]</xpath>
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_BodyAttackTool</bodyPartGroup>
+      <thing>DankPyon_Hide_Chthonian</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_Chthonian"]/lifeStages//li[2]</xpath>
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_BodyAttackTool</bodyPartGroup>
+      <thing>DankPyon_Hide_Chthonian</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_Chthonian"]/lifeStages//li[3]</xpath>
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_BodyAttackTool</bodyPartGroup>
+      <thing>DankPyon_Hide_Chthonian</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseMedium">
+      <defName>DankPyon_Hide_ChthonianLarva</defName>
+      <label>medium chthonian larva hide</label>
+      <graphicData>
+        <texPath>Resources/HideMedium</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(78,60,61)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>194.4</MarketValue>
+      </statBases>
+      <stackLimit>4</stackLimit>
+      <butcherProducts Inherit="False">
+        <CH_Leather_Chthonian>27</CH_Leather_Chthonian>
+      </butcherProducts>
+      <stuffProps>
+        <color>(78,60,61)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+<xpath>/Defs/PawnKindDef[defName="ROM_ChthonianLarva"]/lifeStages//li[1]</xpath>
+
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>ROM_BodyAttackTool</bodyPartGroup>
+    <thing>DankPyon_Hide_ChthonianLarva</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseHuge">
+      <defName>DankPyon_Hide_Cthulhid</defName>
+      <label>huge cthulhid hide</label>
+      <graphicData>
+        <texPath>Resources/HideHuge</texPath>
+        <color>(54,125,54)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>425.25</MarketValue>
+      </statBases>
+      <stackLimit>1</stackLimit>
+      <butcherProducts Inherit="False">
+        <CH_Leather_Cthulhid>135</CH_Leather_Cthulhid>
+      </butcherProducts>
+      <stuffProps>
+        <color>(54,125,54)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_StarSpawnOfCthulhu"]/lifeStages//li[1]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_Cthulhid</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_StarSpawnOfCthulhu"]/lifeStages//li[2]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_Cthulhid</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_StarSpawnOfCthulhu"]/lifeStages//li[3]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_Cthulhid</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+<xpath>/Defs/PawnKindDef[defName="ROM_StarSpawnOfCthulhu"]/lifeStages//li[4]</xpath>
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>Teeth</bodyPartGroup>
+    <thing>DankPyon_Hide_Cthulhid</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseLarge">
+      <defName>DankPyon_Hide_DeepOne</defName>
+      <label>Large deep one hide</label>
+      <graphicData>
+        <texPath>Resources/HideLarge</texPath>
+        <color>(57,59,74)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>303.75</MarketValue>
+      </statBases>
+      <stackLimit>4</stackLimit>
+      <butcherProducts Inherit="False">
+        <CH_Leather_DeepOne>45</CH_Leather_DeepOne>
+      </butcherProducts>
+      <stuffProps>
+        <color>(57,59,74)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_DeepOne"]/lifeStages//li[1]</xpath>
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_DeepOne</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_DeepOne"]/lifeStages//li[2]</xpath>
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_DeepOne</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_DeepOne"]/lifeStages//li[3]</xpath>
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_DeepOne</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+<xpath>/Defs/PawnKindDef[defName="ROM_DeepOne"]/lifeStages//li[4]</xpath>
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>Teeth</bodyPartGroup>
+    <thing>DankPyon_Hide_DeepOne</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseLarge">
+      <defName>DankPyon_Hide_DeepOneGreat</defName>
+      <label>Large great deep one hide</label>
+      <graphicData>
+        <texPath>Resources/HideLarge</texPath>
+        <color>(57,59,74)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>378</MarketValue>
+      </statBases>
+      <stackLimit>2</stackLimit>
+      <butcherProducts Inherit="False">
+        <CH_Leather_DeepOne>56</CH_Leather_DeepOne>
+      </butcherProducts>
+      <stuffProps>
+        <color>(57,59,74)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_DeepOneGreat"]/lifeStages//li[1]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_DeepOneGreat</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_DeepOneGreat"]/lifeStages//li[2]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_DeepOneGreat</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_DeepOneGreat"]/lifeStages//li[3]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_DeepOneGreat</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+<xpath>/Defs/PawnKindDef[defName="ROM_DeepOneGreat"]/lifeStages//li[4]</xpath>
+
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>Teeth</bodyPartGroup>
+    <thing>DankPyon_Hide_DeepOneGreat</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseSmall">
+      <defName>DankPyon_Hide_MiGo</defName>
+      <label>Small migo tergal-plates</label>
+      <graphicData>
+        <texPath>Resources/HideLarge</texPath>
+        <color>(150,57,88)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>40.5</MarketValue>
+      </statBases>
+      <stackLimit>2</stackLimit>
+      <butcherProducts Inherit="False">
+        <CH_Leather_MiGo>23</CH_Leather_MiGo>
+      </butcherProducts>
+      <stuffProps>
+        <color>(150,57,88)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_MiGo"]/lifeStages//li[1]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_Wings</bodyPartGroup>
+      <thing>DankPyon_Hide_MiGo</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_MiGo"]/lifeStages//li[2]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_Wings</bodyPartGroup>
+      <thing>DankPyon_Hide_MiGo</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_MiGo"]/lifeStages//li[3]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_Wings</bodyPartGroup>
+      <thing>DankPyon_Hide_MiGo</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+<xpath>/Defs/PawnKindDef[defName="ROM_MiGo"]/lifeStages//li[4]</xpath>
+
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>ROM_Wings</bodyPartGroup>
+    <thing>DankPyon_Hide_MiGo</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_MiGoCaster"]/lifeStages//li[1]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_Wings</bodyPartGroup>
+      <thing>DankPyon_Hide_MiGo</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_MiGoCaster"]/lifeStages//li[2]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_Wings</bodyPartGroup>
+      <thing>DankPyon_Hide_MiGo</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_MiGoCaster"]/lifeStages//li[3]</xpath>
+  
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_Wings</bodyPartGroup>
+      <thing>DankPyon_Hide_MiGo</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/PawnKindDef[defName="ROM_MiGoCaster"]/lifeStages//li[4]</xpath>
+
+  
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>ROM_Wings</bodyPartGroup>
+      <thing>DankPyon_Hide_MiGo</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <ThingDef ParentName="DankPyon_HideBaseHuge">
+        <defName>DankPyon_Hide_DarkYoung</defName>
+        <label>huge dark young hide</label>
+        <graphicData>
+          <texPath>Resources/HideHuge</texPath>
+          <color>(47,34,75)</color>
+        </graphicData>
+        <statBases>
+          <MarketValue>884.25</MarketValue>
+        </statBases>
+        <stackLimit>2</stackLimit>
+        <butcherProducts Inherit="False">
+          <CH_Leather_DarkYoung>131</CH_Leather_DarkYoung>
+        </butcherProducts>
+        <stuffProps>
+          <color>(47,34,75)</color>
+        </stuffProps>
+      </ThingDef>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef [defName = "ROM_DarkYoung"]/butcherProducts</xpath>
+    <value>
+        <DankPyon_Hide_DarkYoung>1</DankPyon_Hide_DarkYoung>
+    </value>
+  </li>
+
+    </operations>
+  </match>
+</Operation>
+</Patch>

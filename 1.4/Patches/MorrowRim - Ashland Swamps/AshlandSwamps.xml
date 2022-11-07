@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Ashlands Swamp</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_ArgoBehemoth</defName>
+              <label>Large behemoth hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleLarge</texPath>
+                <color>(121,113,83)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>146.88</MarketValue>
+              </statBases>
+              <stackLimit>2</stackLimit>
+              <butcherProducts Inherit="False">
+                <MorrowRim_HeavyLeather>48</MorrowRim_HeavyLeather>
+              </butcherProducts>
+              <stuffProps>
+                <color>(121,113,83)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_ArgoBehemoth"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_ArgoBehemoth</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseHuge">
+            <defName>DankPyon_Hide_SwampStrider</defName>
+            <label>huge swamp-strider hide</label>
+            <graphicData>
+              <texPath>Resources/HideHuge</texPath>
+              <color>(85,72,57)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>345.6</MarketValue>
+            </statBases>
+            <stackLimit>1</stackLimit>
+            <butcherProducts Inherit="False">
+              <MorrowRim_HeavyLeather>160</MorrowRim_HeavyLeather>
+            </butcherProducts>
+            <stuffProps>
+              <color>(85,72,57)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/PawnKindDef [defName="MorrowRim_SwampStrider"]/lifeStages/li[3]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_SwampStrider</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseLarge">
+          <defName>DankPyon_Hide_Wamasu</defName>
+          <label>Huge wamasu hide</label>
+          <graphicData>
+            <texPath>Resources/ScaleHuge</texPath>
+            <color>(121,113,83)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>306</MarketValue>
+          </statBases>
+          <stackLimit>2</stackLimit>
+          <butcherProducts Inherit="False">
+            <MorrowRim_HeavyLeather>100</MorrowRim_HeavyLeather>
+          </butcherProducts>
+          <stuffProps>
+            <color>(121,113,83)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef [defName="MorrowRim_Wamasu"]/lifeStages/li[3]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+        <thing>DankPyon_Hide_Wamasu</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+     
+    </operations>
+  </match>
+</Operation>
+</Patch>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Birds Beyond: Temperate Forest</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>
+            Defs/PawnKindDef[defName="BB_BarnOwl"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_BirdTiny</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="BB_EagleOwl"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_BirdSmall</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+        
+             <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="BB_Kestrel"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_BirdTiny</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="BB_Crow"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_BirdTiny</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+        
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Anima Animals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_AnimaThrumbo</defName>
+              <label>Huge anima thrumbo hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(180.3, 215.5, 202.4)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>2592</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_AnimaThrumbo>160</Leather_AnimaThrumbo>
+              </butcherProducts>
+              <stuffProps>
+                <color>(180.3, 215.5, 202.4)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef [defName="AnimaThrumbo"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_AnimaThrumbo</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName = "AnimaThrumbo"]/butcherProducts</xpath>
+        <value>
+            <AnimaThrumboHorn>1</AnimaThrumboHorn>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseLarge">
+            <defName>DankPyon_Hide_AnimaWarg</defName>
+            <label>Huge anima warg hide</label>
+            <graphicData>
+              <texPath>Resources/HeavyFurLarge</texPath>
+              <color>(194,199,185)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>216</MarketValue>
+            </statBases>
+            <butcherProducts Inherit="False">
+              <Leather_OPAnimaWarg>40</Leather_OPAnimaWarg>
+            </butcherProducts>
+            <stuffProps>
+              <color>(194,199,185)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/PawnKindDef [defName="AnimaWarg"]/lifeStages/li[3]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>DankPyon_Hide_AnimaWarg</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseHuge">
+          <defName>DankPyon_Hide_AnimaBear</defName>
+          <label>Huge anima bear hide</label>
+          <graphicData>
+            <texPath>Resources/HeavyFurHuge</texPath>
+            <color>(174,202,176)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>1161</MarketValue>
+          </statBases>
+          <butcherProducts Inherit="False">
+            <Leather_AnimaBear>128</Leather_AnimaBear>
+          </butcherProducts>
+          <stuffProps>
+            <color>(174,202,176)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef [defName="AnimaBear"]/lifeStages/li[3]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+        <thing>DankPyon_Hide_AnimaBear</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <ThingDef ParentName="DankPyon_HideBaseHuge">
+        <defName>DankPyon_Hide_AnimaYak</defName>
+        <label>Huge anima yak hide</label>
+        <graphicData>
+          <texPath>Resources/HeavyFurHuge</texPath>
+          <color>(106,140,128)</color>
+        </graphicData>
+        <statBases>
+          <MarketValue>157.32</MarketValue>
+        </statBases>
+        <butcherProducts Inherit="False">
+          <Leather_AnimaYak>76</Leather_AnimaYak>
+        </butcherProducts>
+        <stuffProps>
+          <color>(106,140,128)</color>
+        </stuffProps>
+      </ThingDef>
+    </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/PawnKindDef [defName="AnimaYak"]/lifeStages/li[3]</xpath>
+
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>Teeth</bodyPartGroup>
+      <thing>DankPyon_Hide_AnimaYak</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+</li>
+
+      </operations>
+  </match>
+</Operation>
+</Patch>

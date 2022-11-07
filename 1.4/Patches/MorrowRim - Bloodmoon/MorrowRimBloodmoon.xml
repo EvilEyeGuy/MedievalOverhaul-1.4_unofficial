@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Bloodmoon</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_WerewolfMR</defName>
+              <label>huge werewolf hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(115,110,100)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>160</MarketValue>
+              </statBases>
+              <stackLimit>1</stackLimit>
+              <butcherProducts Inherit="False">
+                <Leather_Wolf>60</Leather_Wolf>
+              </butcherProducts>
+              <stuffProps>
+                <color>(115,110,100)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_Werewolf"]/lifeStages/li[1]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_WerewolfMR</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseLarge">
+            <defName>DankPyon_Hide_AvatarOfHircine</defName>
+            <label>large avatar of hircine hide</label>
+            <graphicData>
+              <texPath>Resources/HideLarge</texPath>
+              <color>(178,170,158)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>93.6</MarketValue>
+            </statBases>
+            <stackLimit>2</stackLimit>
+            <butcherProducts Inherit="False">
+              <Leather_Plain>52</Leather_Plain>
+            </butcherProducts>
+            <stuffProps>
+              <color>(178,170,158)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/PawnKindDef [defName="MorrowRim_AvatarOfHircine"]/lifeStages/li[1]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_AvatarOfHircine</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+      </operations>
+  </match>
+</Operation>
+</Patch>

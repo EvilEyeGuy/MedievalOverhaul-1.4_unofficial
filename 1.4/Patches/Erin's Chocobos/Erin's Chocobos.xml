@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Erin's Chocobos</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_Chocobo</defName>
+              <label>large chocobo hide</label>
+              <description>The tanned, dried, scraped skin of a precious Chocobo friend. It is quite delicate, much like the Chocobo's once fragile heart. You'll need tanning skills to make it hug you like it used to.</description>
+              <graphicData>
+                <texPath>Resources/HeavyFurLarge</texPath>
+                <color>(76,83,99)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>72</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Bird>40</Leather_Bird>
+              </butcherProducts>
+              <stuffProps>
+                <color>(76,83,99)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="ERN_Chocobo"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_Chocobo</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+      </operations>
+
+
+  </match>
+</Operation>
+</Patch>

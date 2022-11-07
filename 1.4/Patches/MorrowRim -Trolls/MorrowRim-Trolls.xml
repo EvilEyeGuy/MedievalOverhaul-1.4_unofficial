@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Trolls</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <!-- T1 Trolls -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_TrollLight</defName>
+              <label>large light troll hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurLarge</texPath>
+                <color>(86,77,64)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>140</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MorrowRim_Leather_LightTroll>52</MorrowRim_Leather_LightTroll>
+              </butcherProducts>
+              <stuffProps>
+                <color>(86,77,64)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollBarren"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollLight</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollForest"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollLight</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollSwamp"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollLight</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollFungal"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollLight</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollBoomer"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollLight</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <!-- Pygmy Troll -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_TrollLightPygmy</defName>
+              <label>large pygmy troll hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurLarge</texPath>
+                <color>(86,77,64)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>86</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MorrowRim_Leather_LightTroll>32</MorrowRim_Leather_LightTroll>
+              </butcherProducts>
+              <stuffProps>
+                <color>(86,77,64)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollPygmy"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollLightPygmy</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+
+
+      <!-- T2 Trolls -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_TrollHeavy</defName>
+              <label>large heavy troll hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurLarge</texPath>
+                <color>(58,57,57)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>161</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MorrowRim_Leather_HeavyTroll>56</MorrowRim_Leather_HeavyTroll>
+              </butcherProducts>
+              <stuffProps>
+                <color>(58,57,57)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollFrost"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollHeavy</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollHill"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollHeavy</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollRiver"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollHeavy</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+
+
+      <!-- T3 Trolls -->
+      <!-- Grahl -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_TrollGrahl</defName>
+              <label>huge grahl hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(156,167,179)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>239</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MorrowRim_Leather_Grahl>76</MorrowRim_Leather_Grahl>
+              </butcherProducts>
+              <stuffProps>
+                <color>(156,167,179)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollGrahl"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollGrahl</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li> 
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName = "MorrowRim_TrollGrahl"]/butcherProducts</xpath>
+        <value>
+            <MorrowRim_GrahlTusk>1</MorrowRim_GrahlTusk>
+        </value>
+      </li>
+
+
+      <!-- Udyrfrykte -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollUdyrfrykte"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollHeavy</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>   
+
+      <!-- Gehenoth -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_TrollGehenoth</defName>
+              <label>large gehenoth hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleLarge</texPath>
+                <color>(52,52,75)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>176</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <MorrowRim_Leather_Gehenoth>56</MorrowRim_Leather_Gehenoth>
+              </butcherProducts>
+              <stuffProps>
+                <color>(52,52,75)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="MorrowRim_TrollGehenoth"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_TrollGehenoth</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>   
+
+    </operations>
+  </match>
+</Operation>
+</Patch>

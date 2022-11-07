@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Erin's Wildlife</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_Redpanda</defName>
+              <label>tiny red panda Hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurTiny</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(178,100,34)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>34.2</MarketValue>
+              </statBases>
+              <stackLimit>12</stackLimit>
+              <butcherProducts Inherit="False">
+                <Leather_Light>19</Leather_Light>
+              </butcherProducts>
+              <stuffProps>
+                <color>(178,100,34)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="ERN_Redpanda"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_Redpanda</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseMedium">
+            <defName>DankPyon_Hide_Greyfox</defName>
+            <label>medium greyfox Hide</label>
+            <graphicData>
+              <texPath>Resources/HeavyFurMedium</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(115,110,100)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>51.03</MarketValue>
+            </statBases>
+            <stackLimit>6</stackLimit>
+            <butcherProducts Inherit="False">
+              <Leather_Light>27</Leather_Light>
+            </butcherProducts>
+            <stuffProps>
+              <color>(115,110,100)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/PawnKindDef [defName="ERN_Greyfox"]/lifeStages/li[3]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_Greyfox</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseMedium">
+          <defName>DankPyon_Hide_Mink</defName>
+          <label>medium mink Hide</label>
+          <graphicData>
+            <texPath>Resources/HeavyFurMedium</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(115,110,100)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>51.03</MarketValue>
+          </statBases>
+          <stackLimit>6</stackLimit>
+          <butcherProducts Inherit="False">
+            <Leather_Bear>27</Leather_Bear>
+          </butcherProducts>
+          <stuffProps>
+            <color>(115,110,100)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef [defName="ERN_Mink"]/lifeStages/li[3]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+        <thing>DankPyon_Hide_Mink</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <ThingDef ParentName="DankPyon_HideBaseTiny">
+        <defName>DankPyon_Hide_Hedgehog</defName>
+        <label>tiny hedgehog Hide</label>
+        <graphicData>
+          <texPath>Resources/HeavyFurTiny</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(178,170,158)</color>
+        </graphicData>
+        <statBases>
+          <MarketValue>28.8</MarketValue>
+        </statBases>
+        <stackLimit>12</stackLimit>
+        <butcherProducts Inherit="False">
+          <Leather_Light>16</Leather_Light>
+        </butcherProducts>
+        <stuffProps>
+          <color>(178,170,158)</color>
+        </stuffProps>
+      </ThingDef>
+    </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/PawnKindDef [defName="ERN_Hedgehog"]/lifeStages/li[3]</xpath>
+
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+      <thing>DankPyon_Hide_Hedgehog</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseTiny">
+      <defName>DankPyon_Hide_Gartersnake</defName>
+      <label>tiny garter snake Hide</label>
+      <graphicData>
+        <texPath>Resources/LindwurmScales</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(101,116,58)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>27</MarketValue>
+      </statBases>
+      <stackLimit>12</stackLimit>
+      <butcherProducts Inherit="False">
+        <Leather_Lizard>15</Leather_Lizard>
+      </butcherProducts>
+      <stuffProps>
+        <color>(101,116,58)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+<xpath>Defs/PawnKindDef [defName="ERN_Gartersnake"]/lifeStages/li[3]</xpath>
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+    <thing>DankPyon_Hide_Gartersnake</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseTiny">
+      <defName>DankPyon_Hide_Armadillo</defName>
+      <label>tiny armadillo Hide</label>
+      <graphicData>
+        <texPath>Resources/ScaleTiny</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(140,85,36)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>28.8</MarketValue>
+      </statBases>
+      <stackLimit>12</stackLimit>
+      <butcherProducts Inherit="False">
+        <Leather_Light>16</Leather_Light>
+      </butcherProducts>
+      <stuffProps>
+        <color>(140,85,36)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+<xpath>Defs/PawnKindDef [defName="ERN_Armadillo"]/lifeStages/li[3]</xpath>
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+    <thing>DankPyon_Hide_Armadillo</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+      
+    </operations>
+  </match>
+</Operation>
+</Patch>

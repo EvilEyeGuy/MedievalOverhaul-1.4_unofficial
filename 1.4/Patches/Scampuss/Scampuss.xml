@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Scampuss</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseMedium">
+              <defName>DankPyon_Hide_ScampussSMP</defName>
+              <label>tiny scampuss hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurTiny</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(162,106,57)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>30.6</MarketValue>
+              </statBases>
+              <stackLimit>6</stackLimit>
+              <butcherProducts Inherit="False">
+                <Leather_Plain>19</Leather_Plain>
+              </butcherProducts>
+              <stuffProps>
+                <color>(162,106,57)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="SMP_Scampuss"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_ScampussSMP</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+      </operations>
+
+
+  </match>
+</Operation>
+</Patch>

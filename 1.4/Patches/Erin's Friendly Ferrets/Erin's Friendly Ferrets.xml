@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Erin's Friendly Ferrets</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseSmall">
+              <defName>DankPyon_Hide_Ferret</defName>
+              <label>small ferret hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurSmall</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(76,83,99)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>39.69</MarketValue>
+              </statBases>
+              <stackLimit>6</stackLimit>
+              <butcherProducts Inherit="False">
+                <Leather_Plain>21</Leather_Plain>
+              </butcherProducts>
+              <stuffProps>
+                <color>(76,83,99)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="ERN_Ferret"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_Ferret</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+      </operations>
+
+
+  </match>
+</Operation>
+</Patch>

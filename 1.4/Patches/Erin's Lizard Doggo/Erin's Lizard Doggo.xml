@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Erin's Lizard Doggo</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseMedium">
+              <defName>DankPyon_Hide_LizardDoggo</defName>
+              <label>medium lizard doggo hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleMedium</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(101,116,58)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>51.03</MarketValue>
+              </statBases>
+              <stackLimit>4</stackLimit>
+              <butcherProducts Inherit="False">
+                <Leather_Lizard>27</Leather_Lizard>
+              </butcherProducts>
+              <stuffProps>
+                <color>(101,116,58)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="ERN_lizarddoggo"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_LizardDoggo</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+      </operations>
+
+
+  </match>
+</Operation>
+</Patch>

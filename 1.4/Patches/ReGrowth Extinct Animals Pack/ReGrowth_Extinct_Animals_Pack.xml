@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>ReGrowth: Extinct Animals Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_RG_WoollyMammoth</defName>
+              <label>huge wolly mammoth pelt</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(100,75,67)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>475</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Heavy>160</Leather_Heavy>
+              </butcherProducts>
+              <stuffProps>
+                <color>(100,75,67)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_RG_WoollyRhinoceros</defName>
+              <label>huge wolly rhinoceros pelt</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(92,73,60)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>357</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Heavy>120</Leather_Heavy>
+              </butcherProducts>
+              <stuffProps>
+                <color>(92,73,60)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_RG_Protoceratidae</defName>
+              <label>large protoceratidae hide</label>
+              <graphicData>
+                <texPath>Resources/HideLarge</texPath>
+                <color>(192,133,76)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>68</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Plain>36</Leather_Plain>
+              </butcherProducts>
+              <stuffProps>
+                <color>(192,133,76)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseMedium">
+              <defName>DankPyon_Hide_RG_Dodo</defName>
+              <label>medium dodo birdskin</label>
+              <graphicData>
+                <texPath>Resources/HideMedium</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(113,107,97)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>45</MarketValue>
+              </statBases>
+              <stackLimit>6</stackLimit>
+              <butcherProducts Inherit="False">
+                <Leather_Bird>28</Leather_Bird>
+              </butcherProducts>
+              <stuffProps>
+                <color>(113,107,97)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_RG_ArticDrak</defName>
+              <label>huge artic drak pelt</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(230,232,235)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>237</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Heavy>80</Leather_Heavy>
+              </butcherProducts>
+              <stuffProps>
+                <color>(230,232,235)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/PawnKindDef [defName="RG-EAP_WoollyMammoth"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_RG_WoollyMammoth</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef [defName = "RG-EAP_WoollyMammoth"]</xpath>
+          <value>
+            <butcherProducts>
+              <RG-EAP_WoollyMammothTusk>2</RG-EAP_WoollyMammothTusk>
+            </butcherProducts>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="RG-EAP_WoollyRhinoceros"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_RG_WoollyRhinoceros</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="RG-EAP-Protoceratidae"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_RG_Protoceratidae</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="RG-EAP_Dodo"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_RG_Dodo</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="RG-EAP_ArcticDrak"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>Teeth</bodyPartGroup>
+              <thing>DankPyon_Hide_RG_ArticDrak</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

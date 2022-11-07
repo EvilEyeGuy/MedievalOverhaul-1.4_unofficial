@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Animals Expanded — Caves</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_BlindSalamander</defName>
+              <label>tiny salamander hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <color>(178,170,158)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>30.24</MarketValue>
+              </statBases>
+              <stackLimit>12</stackLimit>
+              <butcherProducts Inherit="False">
+                <Leather_Lizard>16</Leather_Lizard>
+              </butcherProducts>
+              <stuffProps>
+                <color>(178,170,158)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="VAECaves_BlindSalamander"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_BlindSalamander</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseHuge">
+            <defName>DankPyon_Hide_Wyrm</defName>
+            <label>huge wyrm hide</label>
+            <graphicData>
+              <texPath>Resources/ScaleHuge</texPath>
+              <color>(101,116,58)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>181.44</MarketValue>
+            </statBases>
+            <butcherProducts Inherit="False">
+              <Leather_Lizard>96</Leather_Lizard>
+            </butcherProducts>
+            <stuffProps>
+              <color>(101,116,58)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/PawnKindDef [defName="VAECaves_Wyrm"]/lifeStages/li[3]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_Wyrm</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseHuge">
+          <defName>DankPyon_Hide_CaveBear</defName>
+          <label>huge cave bear hide</label>
+          <graphicData>
+            <texPath>Resources/HeavyFurHuge</texPath>
+            <color>(112,82,65)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>306</MarketValue>
+          </statBases>
+          <butcherProducts Inherit="False">
+            <Leather_Bear>100</Leather_Bear>
+          </butcherProducts>
+          <stuffProps>
+            <color>(112,82,65)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef [defName="VAECaves_CaveBear"]/lifeStages/li[3]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+        <thing>DankPyon_Hide_CaveBear</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+      </operations>
+  </match>
+</Operation>
+</Patch>

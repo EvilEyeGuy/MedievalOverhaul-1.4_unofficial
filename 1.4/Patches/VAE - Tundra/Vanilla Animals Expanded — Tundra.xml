@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Animals Expanded — Tundra</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_MuskOxAEXP</defName>
+              <label>huge musk ox hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(112,82,65)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>190.44</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Bluefur>92</Leather_Bluefur>
+              </butcherProducts>
+              <stuffProps>
+                <color>(112,82,65)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="AEXP_Muskox"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_MuskOxAEXP</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseHuge">
+          <defName>DankPyon_Hide_MooseAEXP</defName>
+          <label>huge moose hide</label>
+          <graphicData>
+            <texPath>Resources/HeavyFurHuge</texPath>
+            <color>(112,82,65)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>151.2</MarketValue>
+          </statBases>
+          <butcherProducts Inherit="False">
+            <Leather_Plain>84</Leather_Plain>
+          </butcherProducts>
+          <stuffProps>
+            <color>(112,82,65)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef [defName="AEXP_Moose"]/lifeStages/li[3]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+        <thing>DankPyon_Hide_MooseAEXP</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <ThingDef ParentName="DankPyon_HideBaseHuge">
+        <defName>DankPyon_Hide_MegawolverineAEXP</defName>
+        <label>huge megawolverine hide</label>
+        <graphicData>
+          <texPath>Resources/HeavyFurHuge</texPath>
+          <color>(112,82,65)</color>
+        </graphicData>
+        <statBases>
+          <MarketValue>314.64</MarketValue>
+        </statBases>
+        <butcherProducts Inherit="False">
+          <Leather_Bluefur>152</Leather_Bluefur>
+        </butcherProducts>
+        <stuffProps>
+          <color>(112,82,65)</color>
+        </stuffProps>
+      </ThingDef>
+    </value>
+  </li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/PawnKindDef [defName="AEXP_MegaWolverine"]/lifeStages/li[3]</xpath>
+
+  <value>
+    <butcherBodyPart>
+      <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+      <thing>DankPyon_Hide_MegawolverineAEXP</thing>
+      <allowFemale>true</allowFemale>
+    </butcherBodyPart>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs</xpath>
+  <value>
+    <ThingDef ParentName="DankPyon_HideBaseTiny">
+      <defName>DankPyon_Hide_PorcupineAEXP</defName>
+      <label>tiny porcupine hide</label>
+      <graphicData>
+        <texPath>Resources/HideTiny</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(112,82,65)</color>
+      </graphicData>
+      <statBases>
+        <MarketValue>32.4</MarketValue>
+      </statBases>
+      <stackLimit>12</stackLimit>
+      <butcherProducts Inherit="False">
+        <Leather_Plain>18</Leather_Plain>
+      </butcherProducts>
+      <stuffProps>
+        <color>(112,82,65)</color>
+      </stuffProps>
+    </ThingDef>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+<xpath>Defs/PawnKindDef [defName="AEXP_Porcupine"]/lifeStages/li[3]</xpath>
+
+<value>
+  <butcherBodyPart>
+    <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+    <thing>DankPyon_Hide_MooseAEXP</thing>
+    <allowFemale>true</allowFemale>
+  </butcherBodyPart>
+</value>
+</li>
+
+      </operations>
+  </match>
+</Operation>
+</Patch>

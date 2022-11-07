@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Devilstrand Animals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_Devilbex</defName>
+              <label>large devilbex hide</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurLarge</texPath>
+                <color>(45,45,45)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>74.52</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <ATK_Leather_Devilhide>36</ATK_Leather_Devilhide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(45,45,45)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="ATK_Devilbex"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_Devilbex</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <ThingDef ParentName="DankPyon_HideBaseTiny">
+            <defName>DankPyon_Hide_Devilhare</defName>
+            <label>tiny devilhare hide</label>
+            <graphicData>
+              <texPath>Resources/HeavyFurTiny</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(45,45,45)</color>
+            </graphicData>
+            <statBases>
+              <MarketValue>37.26</MarketValue>
+            </statBases>
+            <stackLimit>6</stackLimit>
+            <butcherProducts Inherit="False">
+              <ATK_Leather_Devilhide>18</ATK_Leather_Devilhide>
+            </butcherProducts>
+            <stuffProps>
+              <color>(45,45,45)</color>
+            </stuffProps>
+          </ThingDef>
+        </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/PawnKindDef [defName="ATK_Devilhare"]/lifeStages/li[3]</xpath>
+
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_Devilhare</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="DankPyon_HideBaseHuge">
+          <defName>DankPyon_Hide_Devilyak</defName>
+          <label>huge devilyak hide</label>
+          <graphicData>
+            <texPath>Resources/HeavyFurHuge</texPath>
+            <color>(45,45,45)</color>
+          </graphicData>
+          <statBases>
+            <MarketValue>157.32</MarketValue>
+          </statBases>
+          <butcherProducts Inherit="False">
+            <ATK_Leather_Devilhide>76</ATK_Leather_Devilhide>
+          </butcherProducts>
+          <stuffProps>
+            <color>(45,45,45)</color>
+          </stuffProps>
+        </ThingDef>
+      </value>
+    </li>
+
+  <li Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef [defName="ATK_Devilyak"]/lifeStages/li[3]</xpath>
+
+    <value>
+      <butcherBodyPart>
+        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+        <thing>DankPyon_Hide_Devilyak</thing>
+        <allowFemale>true</allowFemale>
+      </butcherBodyPart>
+    </value>
+  </li>
+
+      </operations>
+  </match>
+</Operation>
+</Patch>
