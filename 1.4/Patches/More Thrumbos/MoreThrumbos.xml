@@ -8,6 +8,8 @@
             <success>Normal</success>
             <operations>
 
+                <!-- ==========================GingerThrumbo============================ -->
+
                 <li Class="PatchOperationAdd">
                     <xpath>Defs</xpath>
                     <value>
@@ -40,6 +42,224 @@
                         <butcherBodyPart>
                             <bodyPartGroup>HornAttackTool</bodyPartGroup>
                             <thing>DankPyon_Hide_GingerThrumbo</thing>
+                            <allowFemale>true</allowFemale>
+                        </butcherBodyPart>
+                    </value>
+                </li>
+
+                <!-- ==========================BlondThrumbo============================ -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="DankPyon_HideBaseHuge">
+                            <defName>DankPyon_Hide_BlondThrumbo</defName>
+                            <label>large blond thrumbo pelt</label>
+                            <graphicData>
+                                <texPath>Resources/HeavyFurHuge</texPath>
+                                <color>(66,57,60)</color>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>1512</MarketValue>
+                            </statBases>
+                            <butcherProducts Inherit="False">
+                                <BlondThrumboHorn>1</BlondThrumboHorn>
+                                <BlondThrumboWool>260</BlondThrumboWool>
+                                <BlondThrumboLeather>120</BlondThrumboLeather>
+                            </butcherProducts>
+                            <stuffProps>
+                                <color>(255,204,0)</color>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/PawnKindDef [defName="BlondThrumboPawn"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+                    <value>
+                        <butcherBodyPart>
+                            <bodyPartGroup>HornAttackTool</bodyPartGroup>
+                            <thing>DankPyon_Hide_BlondThrumbo</thing>
+                            <allowFemale>true</allowFemale>
+                        </butcherBodyPart>
+                    </value>
+                </li>
+
+                <!--====================== Bionic Damaged Thrumbo / Bionic Thrumbo ===========================-->
+                <!-- Originally this thrumbo drops thrumbo leather. Now it will only drop its proper mechanical parts, so MO without a patch actually makes it better. -->
+
+                <!-- 
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="DankPyon_HideBaseHuge">
+                            <defName>DankPyon_Hide_BionicDamagedThrumbo</defName>
+                            <label>large damaged bionic thrumbo pelt</label>
+                            <graphicData>
+                                <texPath>Resources/HeavyFurHuge</texPath>
+                                <color>(66,57,60)</color>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>1512</MarketValue>
+                            </statBases>
+                            <butcherProducts Inherit="False">
+                                <Plasteel>50</Plasteel>
+                                <Steel>100</Steel>
+                                <Silver>50</Silver>
+                                <ComponentSpacer>2</ComponentSpacer>
+                                <ComponentIndustrial>8</ComponentIndustrial>
+                                <AncientBionicThrumboHorn>1</AncientBionicThrumboHorn>
+                            </butcherProducts>
+                            <stuffProps>
+                                <color>(102,102,153)</color>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/PawnKindDef [defName="BionicDamagedThrumboPawn"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+                    <value>
+                        <butcherBodyPart>
+                            <bodyPartGroup>HornAttackTool</bodyPartGroup>
+                            <thing>DankPyon_Hide_BionicDamagedThrumbo</thing>
+                            <allowFemale>true</allowFemale>
+                        </butcherBodyPart>
+                    </value>
+                </li>
+            -->
+
+                <!-- ==========================BlackThrumbo============================ -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="LeatherBase">
+                            <defName>BlackThrumboLeather</defName>
+                            <label>black thrumbo fur</label>
+                            <description>Furry pelt of a black thrumbo. Luxurious and extraordinarily durable. Used for the high-quality crafts for its insulation. This fur is well-valued in all sectors.</description>
+                            <graphicData>
+                                <color>(0,0,0)</color>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>12.8</MarketValue>
+                                <StuffPower_Armor_Sharp>1.88</StuffPower_Armor_Sharp>
+                                <StuffPower_Armor_Blunt>0.46</StuffPower_Armor_Blunt>
+                                <StuffPower_Insulation_Cold>85</StuffPower_Insulation_Cold>
+                                <StuffPower_Insulation_Heat>65</StuffPower_Insulation_Heat>
+                            </statBases>
+                            <stuffProps>
+                                <color>(0,0,0)</color>
+                                <commonality>0.0020</commonality>
+                                <statFactors>
+                                    <MaxHitPoints>6.0</MaxHitPoints>
+                                </statFactors>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="DankPyon_HideBaseHuge">
+                            <defName>DankPyon_Hide_BlackThrumbo</defName>
+                            <label>large black thrumbo pelt</label>
+                            <graphicData>
+                                <texPath>Resources/HeavyFurHuge</texPath>
+                                <color>(0,0,0)</color>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>1512</MarketValue>
+                            </statBases>
+                            <butcherProducts Inherit="False">
+                                <BlackThrumboHorn>1</BlackThrumboHorn>
+                                <BlackThrumboWool>360</BlackThrumboWool>
+                                <BlackThrumboLeather>120</BlackThrumboLeather>
+                            </butcherProducts>
+                            <stuffProps>
+                                <color>(255,204,0)</color>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/PawnKindDef [defName="BlackThrumboPawn"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+                    <value>
+                        <butcherBodyPart>
+                            <bodyPartGroup>HornAttackTool</bodyPartGroup>
+                            <thing>DankPyon_Hide_BlackThrumbo</thing>
+                            <allowFemale>true</allowFemale>
+                        </butcherBodyPart>
+                    </value>
+                </li>
+
+                <!-- ==========================SilverThrumbo============================ -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="LeatherBase">
+                            <defName>SilverThrumboLeather</defName>
+                            <label>silver thrumbo fur</label>
+                            <description>Furry pelt of a silver thrumbo. Luxurious and extraordinarily durable. Used for the high-quality crafts for its insulation. This fur is well-valued in all sectors.</description>
+                            <graphicData>
+                                <color>(102,153,153)</color>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>12.8</MarketValue>
+                                <StuffPower_Armor_Sharp>1.88</StuffPower_Armor_Sharp>
+                                <StuffPower_Armor_Blunt>0.46</StuffPower_Armor_Blunt>
+                                <StuffPower_Insulation_Cold>85</StuffPower_Insulation_Cold>
+                                <StuffPower_Insulation_Heat>65</StuffPower_Insulation_Heat>
+                            </statBases>
+                            <stuffProps>
+                                <color>(102,153,153)</color>
+                                <commonality>0.0020</commonality>
+                                <statFactors>
+                                    <MaxHitPoints>6.0</MaxHitPoints>
+                                </statFactors>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="DankPyon_HideBaseHuge">
+                            <defName>DankPyon_Hide_SilverThrumbo</defName>
+                            <label>large silver thrumbo pelt</label>
+                            <graphicData>
+                                <texPath>Resources/HeavyFurHuge</texPath>
+                                <color>(102,153,153)</color>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>1512</MarketValue>
+                            </statBases>
+                            <butcherProducts Inherit="False">
+                                <SilverThrumboHorn>1</SilverThrumboHorn>
+                                <SilverThrumboWool>360</SilverThrumboWool>
+                                <SilverThrumboLeather>120</SilverThrumboLeather>
+                            </butcherProducts>
+                            <stuffProps>
+                                <color>(255,204,0)</color>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/PawnKindDef [defName="SilverThrumboPawn"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+                    <value>
+                        <butcherBodyPart>
+                            <bodyPartGroup>HornAttackTool</bodyPartGroup>
+                            <thing>DankPyon_Hide_SilverThrumbo</thing>
                             <allowFemale>true</allowFemale>
                         </butcherBodyPart>
                     </value>
