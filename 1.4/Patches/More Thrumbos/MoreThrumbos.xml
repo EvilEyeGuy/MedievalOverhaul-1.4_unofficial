@@ -24,9 +24,9 @@
                                 <MarketValue>1512</MarketValue>
                             </statBases>
                             <butcherProducts Inherit="False">
+                                <GingerThrumboLeather>120</GingerThrumboLeather>
                                 <GingerThrumboHorn>1</GingerThrumboHorn>
                                 <GingerThrumboWool>360</GingerThrumboWool>
-                                <GingerThrumboLeather>120</GingerThrumboLeather>
                             </butcherProducts>
                             <stuffProps>
                                 <color>(255,153,51)</color>
@@ -63,9 +63,9 @@
                                 <MarketValue>1512</MarketValue>
                             </statBases>
                             <butcherProducts Inherit="False">
+                                <BlondThrumboLeather>120</BlondThrumboLeather>
                                 <BlondThrumboHorn>1</BlondThrumboHorn>
                                 <BlondThrumboWool>260</BlondThrumboWool>
-                                <BlondThrumboLeather>120</BlondThrumboLeather>
                             </butcherProducts>
                             <stuffProps>
                                 <color>(255,204,0)</color>
@@ -175,9 +175,9 @@
                                 <MarketValue>1512</MarketValue>
                             </statBases>
                             <butcherProducts Inherit="False">
+                                <BlackThrumboLeather>120</BlackThrumboLeather>
                                 <BlackThrumboHorn>1</BlackThrumboHorn>
                                 <BlackThrumboWool>360</BlackThrumboWool>
-                                <BlackThrumboLeather>120</BlackThrumboLeather>
                             </butcherProducts>
                             <stuffProps>
                                 <color>(255,204,0)</color>
@@ -242,9 +242,9 @@
                                 <MarketValue>1512</MarketValue>
                             </statBases>
                             <butcherProducts Inherit="False">
+                                <SilverThrumboLeather>120</SilverThrumboLeather>
                                 <SilverThrumboHorn>1</SilverThrumboHorn>
                                 <SilverThrumboWool>360</SilverThrumboWool>
-                                <SilverThrumboLeather>120</SilverThrumboLeather>
                             </butcherProducts>
                             <stuffProps>
                                 <color>(255,204,0)</color>
