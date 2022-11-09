@@ -1,0 +1,51 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>More Thrumbos (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Normal</success>
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="DankPyon_HideBaseHuge">
+                            <defName>DankPyon_Hide_GingerThrumbo</defName>
+                            <label>large ginger thrumbo pelt</label>
+                            <graphicData>
+                                <texPath>Resources/HeavyFurHuge</texPath>
+                                <color>(66,57,60)</color>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>1512</MarketValue>
+                            </statBases>
+                            <butcherProducts Inherit="False">
+                                <GingerThrumboHorn>1</GingerThrumboHorn>
+                                <GingerThrumboWool>360</GingerThrumboWool>
+                                <GingerThrumboLeather>120</GingerThrumboLeather>
+                            </butcherProducts>
+                            <stuffProps>
+                                <color>(255,153,51)</color>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/PawnKindDef [defName="GingerThrumboPawn"]/lifeStages/li[3]/butcherBodyPart</xpath>
+
+                    <value>
+                        <butcherBodyPart>
+                            <bodyPartGroup>HornAttackTool</bodyPartGroup>
+                            <thing>DankPyon_Hide_GingerThrumbo</thing>
+                            <allowFemale>true</allowFemale>
+                        </butcherBodyPart>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
