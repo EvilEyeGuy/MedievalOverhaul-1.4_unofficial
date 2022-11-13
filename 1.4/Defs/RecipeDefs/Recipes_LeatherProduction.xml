@@ -95,6 +95,103 @@
 		</fixedIngredientFilter>
 	</RecipeDef>
 
+	<!-- 10X -->
+	
+    <RecipeDef Abstract="True" Name="DankPyon_MakeTanningLiquorBase10X">
+		<jobString>Boiling wood into 60 tanning liquor.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>4250</workAmount>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<products>
+			<DankPyon_TanningLiquor>60</DankPyon_TanningLiquor>
+		</products>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>DankPyon_RusticCookingTable</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_LeatherTanning</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase10X">
+		<defName>MakeTanningLiquorFromWood10X</defName>
+		<label>make tanning liquor from wood (10X)</label>
+		<description>Make a batch of tanning liquor using the bark and wood contents from logs.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase10X">
+		<defName>DankPyon_MakeTanningLiquorFromFood10X</defName>
+		<label>make tanning liquor from plants (10X)</label>
+		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
+		<jobString>Boiling plants into 60 tanning liquor.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawHops</li>
+						<li>RawAgave</li>
+						<li>RawBerries</li>
+						<li>RawCorn</li>
+					</thingDefs>
+				</filter>
+				<count>280</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawHops</li>
+				<li>RawAgave</li>
+				<li>RawBerries</li>
+				<li>RawCorn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase10X">
+		<defName>DankPyon_MakeTanningLiquorFromMeat10X</defName>
+		<label>make tanning liquor from meat (10X)</label>
+		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
+		<jobString>Boiling meat into 60 tanning liquor.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+					   <li>MeatRaw</li>
+					</categories>
+				 </filter>
+				<count>280</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
 	<!--RecipeDef Abstract="True" Name="DankPyon_PrepareHideBase">
 		<description>Treat a hide or pelt to become usuable leather.</description>
 		<jobString>Treating hide for tanning.</jobString>

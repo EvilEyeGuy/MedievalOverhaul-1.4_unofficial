@@ -2705,13 +2705,13 @@
         <Flammability>0</Flammability>
         <Beauty>65</Beauty>
     </statBases>
-    <!--comps>
+    <comps>
         <li Class="DankPyon.CompProperties_RandomName">
             <nameMakers>
                 <li>DankPyon_Namer_WeaponsSlash</li>
             </nameMakers>
         </li>
-    </comps-->
+    </comps>
 
     <thingCategories>
 		    <li>DankPyon_WeaponsMeleeNamed</li>
@@ -2726,13 +2726,13 @@
         <Flammability>0</Flammability>
         <Beauty>65</Beauty>
     </statBases>
-    <!--comps>
+    <comps>
         <li Class="DankPyon.CompProperties_RandomName">
             <nameMakers>
                 <li>DankPyon_Namer_WeaponsPierce</li>
             </nameMakers>
         </li>
-    </comps-->
+    </comps>
 
     <thingCategories>
         <li>DankPyon_WeaponsMeleeNamed</li>
@@ -2747,13 +2747,13 @@
         <Flammability>0</Flammability>
         <Beauty>65</Beauty>
     </statBases>
-    <!--comps>
+    <comps>
         <li Class="DankPyon.CompProperties_RandomName">
             <nameMakers>
                 <li>DankPyon_Namer_WeaponsBlunt</li>
             </nameMakers>
         </li>
-    </comps-->
+    </comps>
 
     <thingCategories>
         <li>DankPyon_WeaponsMeleeNamed</li>

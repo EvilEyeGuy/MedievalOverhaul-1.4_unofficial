@@ -183,6 +183,7 @@
 			<tradeTag>WeaponsMelee</tradeTag>
 			<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
 			<countRange>2~3</countRange>
+			<!--excludedCategories><li>DankPyon_WeaponsMeleeNamed</li></excludedCategories-->
 		</li>	
       <!--li Class="StockGenerator_Category">
         <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
