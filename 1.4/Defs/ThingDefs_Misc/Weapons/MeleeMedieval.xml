@@ -659,11 +659,26 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>	
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
 	
@@ -741,11 +756,26 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>	
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
@@ -822,11 +852,26 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
@@ -903,11 +948,26 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
@@ -984,12 +1044,27 @@
 		<texPath>WeaponMelee/Polearms/Billhook</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.5,1.5)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
 		<shaderType>CutoutComplex</shaderType>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
@@ -1065,11 +1140,26 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.5,1.5)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
@@ -1299,11 +1389,26 @@
 		<texPath>WeaponMelee/Polearms/Halberd</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.5,1.5)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>	
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
@@ -1699,11 +1804,26 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.5,1.5)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>	
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
@@ -2165,11 +2285,26 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.5,1.5)</drawSize>
-		<drawOffsetNorth>(0.34,0,0.70)</drawOffsetNorth>
-		<drawOffsetEast>(-0.34,0,0.70)</drawOffsetEast>
-		<drawOffsetSouth>(-0.34,0,0.70)</drawOffsetSouth>
-		<drawOffsetWest>(0.34,0,0.70)</drawOffsetWest>
     </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<!--angleOffset>-180</angleOffset-->
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>	
     <techLevel>Medieval</techLevel>
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
@@ -2551,11 +2686,25 @@
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
     <drawSize>(1.25,1.25)</drawSize>
-	<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
-	<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
-	<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
-	<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
   </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.30,0.0,0.40)</drawOffset>
+				</north>
+				<east>
+					<drawOffset>(0.30,0.20,0.40)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(0.30,0.20,0.40)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(-0.30,0.20,0.40)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions>  
   <techLevel>Medieval</techLevel>
   <equippedAngleOffset>-60</equippedAngleOffset> 
   <!--comps>
@@ -2625,11 +2774,8 @@
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
     <drawSize>(1.25,1.25)</drawSize>
-	<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
-	<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
-	<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
-	<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
   </graphicData>
+
   <techLevel>Medieval</techLevel>
   <equippedAngleOffset>-60</equippedAngleOffset> 
   <!--comps>
@@ -2691,6 +2837,20 @@
   
     <modExtensions>
 		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.30,0.0,0.40)</drawOffset>
+				</north>
+				<east>
+					<drawOffset>(0.30,0.20,0.40)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(0.30,0.20,0.40)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(-0.30,0.20,0.40)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
 			<usableWithShields>false</usableWithShields>
 		</li>
     </modExtensions>
@@ -2770,11 +2930,25 @@
         <texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword1</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>(1.25,1.25)</drawSize>
-		<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
-		<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
-		<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
-		<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
-    </graphicData>
+  </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.30,0.0,0.40)</drawOffset>
+				</north>
+				<east>
+					<drawOffset>(0.30,0.20,0.40)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(0.30,0.20,0.40)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(-0.30,0.20,0.40)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions> 
     <equippedAngleOffset>-60</equippedAngleOffset> 
     <!--comps>
         <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
@@ -3019,11 +3193,25 @@
 		<texPath>WeaponMelee/Polearms/NamedHalberd/NamedHalberd1</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.5,1.5)</drawSize>
-		<drawOffsetNorth>(0.30,0.0,0.40)</drawOffsetNorth>
-		<drawOffsetEast>(0.30,0.20,0.40)</drawOffsetEast>
-		<drawOffsetSouth>(0.30,0.20,0.40)</drawOffsetSouth>
-		<drawOffsetWest>(-0.30,0.20,0.40)</drawOffsetWest>
-    </graphicData>
+  </graphicData>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponCarryDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0.0,0.70)</drawOffset>
+				</north>
+				<east>
+					<drawOffset>(-0.34,0.0,0.70)</drawOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0.0,0.70)</drawOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0.0,0.70)</drawOffset>
+				</west>
+			</weaponCarryDrawOffsets>
+		</li>
+	</modExtensions> 
     <equippedAngleOffset>-100</equippedAngleOffset>
     <!--comps>
       <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">

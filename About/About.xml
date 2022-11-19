@@ -40,11 +40,11 @@
 		<displayName>[SYR] Processor Framework</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
 	  </li>
-	  <li>
+	  <!--li>
 		<packageId>CarnySenpai.EnableOversizedWeapons</packageId>
 		<displayName>Enable Oversized Weapons</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889</steamWorkshopUrl>
-	  </li>
+	  </li-->
 	</modDependencies>
 	<description>Pretty dank mod</description>
 </ModMetaData>
