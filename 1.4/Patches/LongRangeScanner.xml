@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul (unofficial)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<WorkGiverDef>
+							<defName>LongRangeScanMO</defName>
+							<label>writing letters</label>
+							<giverClass>WorkGiver_OperateScanner</giverClass>
+							<workType>Research</workType>
+							<priorityInType>50</priorityInType>
+							<verb>scan</verb>
+							<gerund>writing letters at</gerund>
+							<scannerDef>DankPyon_ScribeTable</scannerDef>
+							<requiredCapacities>
+								<li>Manipulation</li>
+							</requiredCapacities>
+						</WorkGiverDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_ScribeTable"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_LongRangeMineralScanner">
+							<scanSpeedStat>ResearchSpeed</scanSpeedStat>
+							<scanFindMtbDays>4</scanFindMtbDays>
+							<scanFindGuaranteedDays>8</scanFindGuaranteedDays>
+							<soundWorking>ScannerLongRangeMineral_Ambience</soundWorking>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/JobDef[defName="OperateScanner"]/reportString</xpath>
+					<value>
+						<reportString>writing letters</reportString>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

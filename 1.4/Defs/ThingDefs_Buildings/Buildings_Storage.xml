@@ -64,13 +64,13 @@
     </building>
 
     <comps>
-      <!--li Class="LWM.DeepStorage.Properties" >
+      <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
         <maxNumberStacks>6</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
-      </li-->
+      </li>
     </comps>
     <researchPrerequisites Inherit="false">
     </researchPrerequisites>
